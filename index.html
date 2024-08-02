@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new deal</title>
+
+    <!-- Montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Montserrat font -->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+    <h1>Create new deal</h1>
+    <form id="dealForm">
+
+        <div class="info_box client_details">
+            <h2>Client details</h2>
+            <div class="client_details_top">
+                <input type="text" id="first_name" placeholder="First name" required>
+                <input type="text" id="last_name" placeholder="Last name" required>
+            </div>
+            <input type="tel" id="phone" placeholder="Phone" required>
+            <input type="email" id="email" placeholder="Email (optional)">
+        </div>
+
+        <div class="info_box job_type">
+            <h2>Job details</h2>
+            <select name="" id="job_type" required>
+                <option value="" selected hidden disabled>Select job type</option>
+                <option value="job type_1">Recall Job 1</option>
+                <option value="job type_2">Recall Job 2</option>
+                <option value="job type_3">Recall Job 3</option>
+            </select>
+            <select name="" id="job_info" required>
+                <option value="" selected hidden disabled>Select location</option>
+                <option value="gl pinellas1">Location 1</option>
+                <option value="gl pinellas2">Location 2</option>
+                <option value="gl pinellas3">Location 3</option>
+            </select>
+            <textarea id="job_desc" style=" min-width: 100%; max-width: 100%; max-height: 400px; min-height: 55px;" name="" placeholder="Job description (optional)"></textarea>
+        </div>
+
+        <div class="info_box client_details">
+            <h2>Service Location</h2>
+            <input type="text" id="adress" placeholder="Adress" required>
+            <input type="text" id="city" placeholder="City" required>
+            <input type="text" id="state" placeholder="State" required>
+            <div class="client_details_top">
+                <input type="number" id="price" placeholder="Price" required>
+                <select name="" id="service_location" required>
+                    <option value="" selected hidden disabled>Service location</option>
+                    <option value="service location1">Tampa1</option>
+                    <option value="service location2">Tampa2</option>
+                    <option value="service location3">Tampa3</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="info_box client_details">
+            <h2>Scheduled</h2>
+            <input type="date" id="date" required>
+            <div class="client_details_top">
+                <select name="" id="start_hours">
+                    <option value="08:00" selected>08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                </select>
+                <select name="" id="end_hours">
+                    <option value="08:00" selected>08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                </select>
+            </div>
+            <select name="" id="technician" required>
+                <option value="" selected hidden disabled>Select technician</option>
+                <option value="technician 1">technician 1</option>
+                <option value="technician 2">technician 2</option>
+                <option value="technician 3">technician 3</option>
+            </select>
+        </div>
+
+        <button class="submit_button create_job" type="submit">Create job</button>
+        <button class="submit_button save_info" type="submit">Save info</button>
+        <!-- <div class="buttons_container"></div> -->
+    </form>
+
+</body>
+
+</html>
